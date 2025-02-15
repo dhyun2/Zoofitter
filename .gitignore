@@ -1,11 +1,13 @@
-
 # ✅ Node.js 패키지 및 캐시 파일
 node_modules/
 
-# ✅ 빌드 아티팩트
+# ✅ 빌드 아티팩트 (컴파일된 결과물)
 dist/
 build/
 output/
+
+# ✅ TurboRepo 캐시 파일
+.turbo/
 
 # ✅ 로그 파일 및 환경 변수 파일
 *.log
