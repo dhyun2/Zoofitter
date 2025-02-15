@@ -1,0 +1,12 @@
+{
+  "name": "Zoofitter",
+  "version": "0.0.1",
+  "description": "",
+  "engines": {
+    "node": ">=23",
+    "pnpm": ">=10"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

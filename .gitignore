@@ -1,0 +1,16 @@
+
+# ✅ Node.js 패키지 및 캐시 파일
+node_modules/
+
+# ✅ 빌드 아티팩트
+dist/
+build/
+output/
+
+# ✅ 로그 파일 및 환경 변수 파일
+*.log
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
