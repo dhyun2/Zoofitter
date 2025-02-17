@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    // ✅ 빌드 최적화
+    "incremental": true, // 변경된 파일만 다시 컴파일 (빌드 속도 향상)
+    "tsBuildInfoFile": "./.tsbuildinfo", // 증분 빌드 캐시 저장 파일
+
+    // ✅ 타입 정의 파일 관련
+    "declaration": true, // .d.ts 타입 선언 파일 생성
+    "declarationMap": true, // .d.ts.map 파일 생성 → 타입 추적 가능
+
+    // ✅ 모듈 및 해석 방식
+    "module": "NodeNext", // 최신 Node.js ESM 방식 (`import`/`export`)
+    "moduleResolution": "NodeNext", // 최신 Node.js 모듈 해석 방식
+    "moduleDetection": "force", // `package.json`의 `type`을 무시하고 강제로 ESM/CJS 설정 적용
+    "resolveJsonModule": true, // JSON import 가능 (`import data from './config.json'`)
+    "isolatedModules": true, // 개별 파일 단위로 TypeScript 변환 (ESBuild, SWC 호환)
+
+    // ✅ 런타임 안정성 강화
+    "exactOptionalPropertyTypes": true, // `?`가 붙은 객체 속성의 undefined 여부 명확히 체크
+    "strictPropertyInitialization": true, // 클래스 속성 초기화 필수
+
+    // ✅ 안전한 코드 작성
+    "noUncheckedIndexedAccess": true, // `obj["key"]` 접근 시 undefined 가능성 체크
+    "noImplicitReturns": true, // 모든 함수에서 명확한 return 필요
+    "noFallthroughCasesInSwitch": true, // switch 문에서 `break` 누락 방지
+
+    // ✅ 최신 JS 기능 지원
+    "target": "ES2022", // 최신 ECMAScript 2022 기능 포함
+    "lib": ["es2022", "DOM", "DOM.Iterable"], // 최신 JS + 브라우저 API 지원
+
+    // ✅ 빌드 속도 최적화
+    "skipLibCheck": true, // node_modules 내부의 타입 검사 건너뛰기
+    "strict": true // 엄격한 타입 검사 활성화
+  },
+  "include": ["src"], // `src/` 디렉토리 내부만 TypeScript 대상
+  "exclude": ["node_modules", "dist"] // node_modules, dist 폴더는 검사 제외
+}
