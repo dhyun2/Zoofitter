@@ -1,0 +1,25 @@
+{
+  "name": "Zoofitter",
+  "version": "0.0.1",
+  "description": "",
+  "engines": {
+    "node": ">=23",
+    "pnpm": ">=10"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@changesets/cli": "^2.28.0",
+    "@commitlint/cli": "^19.7.1",
+    "@commitlint/config-conventional": "^19.7.1",
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
+    "husky": "^9.1.7",
+    "prettier": "^3.5.1",
+    "turbo": "^2.4.2"
+  },
+  "scripts": {
+    "prepare": "husky"
+  },
+  "packageManager": "pnpm@10.4.0"
+}
