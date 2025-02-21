@@ -1,5 +1,5 @@
 {
-  "name": "Zoofitter",
+  "name": "zoofitter",
   "version": "0.0.1",
   "description": "",
   "engines": {
@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@changesets/cli": "^2.28.0",
+    "@changesets/cli": "^2.28.1",
     "@commitlint/cli": "^19.7.1",
     "@commitlint/config-conventional": "^19.7.1",
     "@trivago/prettier-plugin-sort-imports": "^5.2.2",
